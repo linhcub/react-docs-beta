@@ -9,10 +9,19 @@ const user = {
 export default function Profile() {
     return (
         <>
-            <h1>{user.name}</h1>
+            <h1 style={{ color: 'green' }}>{user.name}</h1>
             <img
                 className="avatar"
                 src={user.imageUrl}
+                alt={'Photo of ' + user.name}
+                style={{
+                    width: user.imageSize,
+                    height: user.imageSize
+                }}
+            />
+            <img
+                className="avatar"
+                src="https://i.pinimg.com/originals/8b/fd/c0/8bfdc0caa9db3d0bed87a4a51e197ea2.png"
                 alt={'Photo of ' + user.name}
                 style={{
                     width: user.imageSize,
